@@ -1,0 +1,48 @@
+body {
+	background-color: gold;
+	background-image: url(http://subtlepatterns.com/patterns/food.png);
+	font-family: sans-serif;
+}
+
+header,
+section {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 130%;
+
+}
+
+.profile-pic {
+	width: 200px;
+}
+
+.page-title {
+	font-family: "Ubuntu";
+	font-size: 50px;
+	text-align: center;
+	text-shadow: 5px 5px 5px rgba(0,0,0,0.5); 
+}
+
+.page-header {
+	color: white;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.info-selection {
+	background-color: white;
+	padding: 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.gallery-selection {
+	text-align: center;
+}
+
+.gallery-selection img {
+	border: 5px solid white;
+	height: 150px;
+}

@@ -1,0 +1,118 @@
+@font-face { font-family: Ubuntu; src: url(fonts/Ubuntu-R.ttf)}
+
+html {
+	background-image: url("images/giphy.gif");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+body {
+	margin: 0; 
+	font-family: Ubuntu;
+}
+
+.tiny-header a {
+	text-decoration: none;
+	color: lightgrey;
+}
+
+.tiny-header header {
+	background-color:  #333333;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	margin-bottom: 50px;
+}
+/*     Not in use
+.tiny-header h1 {
+	color: white;
+	margin: 0;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: "Ubuntu"
+}
+*/
+
+.main-menu {
+	background: #333333;
+}
+
+.main-menu a {
+	background-color: #333333;
+	border-color: #00DD00;
+	font-weight: bold;
+	display: inline-block;
+	padding: 5px 7px;
+}
+
+.main-menu a:hover {
+	background-color: #696969;
+	color: #FFFFFF;
+}
+
+.page-content {
+	background-color: #959;
+	padding: 30px;
+	width: 700px;
+	margin: 0 auto;
+	margin-top: 30px;
+
+	color: #FFFFFF;
+	font-size: 14px;
+	line-height: 130%;
+}
+
+/* GALLERY */
+
+.gallery {
+/*	background-color: #222222; */
+    padding: 30px;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align:center;
+}
+
+.gallery img {
+	height: 100px;
+	border-width: 5px;
+	border-style: solid;
+	margin: 5px;
+}
+
+
+/* Specialty */
+
+a.nounderline {
+	text-decoration: none;
+	color: white;
+}
+
+#social-media img {
+	height: 40px;
+	padding: 3px;
+}
+
+table {
+	width: auto;
+}
+
+td { 
+	width: 50%;
+ }
+
+#video-content {
+	text-align: center;
+}
+
+h2#willit {
+	margin-left: 33px;
+}
+
+div#left {
+	float: left;
+}
+
+div#right {
+	float: right;
+}
