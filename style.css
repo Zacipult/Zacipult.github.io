@@ -56,9 +56,8 @@ body {
 	width: 700px;
 	margin: 0 auto;
 	margin-top: 30px;
-
 	color: #FFFFFF;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 130%;
 }
 
@@ -105,14 +104,10 @@ td {
 	text-align: center;
 }
 
-h2#willit {
-	margin-left: 33px;
-}
 
-div#left {
-	float: left;
-}
-
-div#right {
-	float: right;
+img#displayphoto {
+	margin: 4px;
+	border-width: 6px;
+	border-color: lightgrey;
+	border-style: solid;
 }
