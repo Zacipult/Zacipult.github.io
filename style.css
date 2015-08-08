@@ -111,3 +111,9 @@ img#displayphoto {
 	border-color: lightgrey;
 	border-style: solid;
 }
+
+/* FANCYBOX */
+
+.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}

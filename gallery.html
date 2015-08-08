@@ -1,11 +1,121 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="shortcut icon" type="text/css" href="images/cm12.ico">
 	<title>Zacipult</title>
-</head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="text/css" href="images/cm12.ico">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="../source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			/*
+			 *  Open manually
+			 */
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('images/gallery/1.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : 'images/gallery/1.jpg',
+						title : 'My title'
+					}, {
+						href : 'images/gallery/2.jpg',
+						title : '2nd title'
+					}, {
+						href : 'images/gallery/3.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+	</script>
 <body>
+
 <div class="tiny-header">
 
 	<header>
@@ -30,14 +140,15 @@
 	</p>
 
 		<section class="gallery">
-			<img src="images/gallery/1.jpg" alt="">
-			<img src="images/gallery/2.jpg" alt="">
-			<img src="images/gallery/3.jpg" alt="">
-			<img src="images/gallery/4.jpg" alt="">
-			<img src="images/gallery/5.jpg" alt="">
-			<img src="images/gallery/6.jpg" alt="">
-			<img src="images/gallery/7.jpg" alt="">
-			<img src="images/gallery/8.jpg" alt="">		
+			<a id="single_1" class="fancybox-effects-d" rel="group" href="images/gallery/1.jpg"><img src="images/gallery/1_1.jpg" alt="" /></a>
+			<a id="single_2" class="fancybox-effects-d" rel="group" href="images/gallery/2.jpg"><img src="images/gallery/2_1.jpg" alt="" /></a>
+			<a id="single_3" class="fancybox-effects-d" rel="group" href="images/gallery/3.jpg"><img src="images/gallery/3_1.jpg" alt="" /></a>
+			<a id="single_4" class="fancybox-effects-d" rel="group" href="images/gallery/4.jpg"><img src="images/gallery/4_1.jpg" alt="" /></a>
+			<a id="single_5" class="fancybox-effects-d" rel="group" href="images/gallery/5.jpg"><img src="images/gallery/5_1.jpg" alt="" /></a>
+			<a id="single_6" class="fancybox-effects-c" rel="group" href="images/gallery/6.jpg"><img src="images/gallery/6_1.jpg" alt="" /></a>
+			<a id="single_7" class="fancybox-effects-c" rel="group" href="images/gallery/7.jpg"><img src="images/gallery/7_1.jpg" alt="" /></a>
+			<a id="single_8" class="fancybox-effects-c" rel="group" href="images/gallery/8.jpg"><img src="images/gallery/8_1.jpg" alt="" /></a>
+
 		</section>
 	
 	</section>
