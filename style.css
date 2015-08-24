@@ -51,6 +51,7 @@ body {
 }
 
 .page-content {
+	border-radius: 15px;
 	background-color: #959;
 	padding: 30px;
 	width: 700px;
