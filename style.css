@@ -1,22 +1,19 @@
 @font-face { font-family: Ubuntu; src: url(fonts/Ubuntu-R.ttf)}
-
+/* This is declaring the background wallpaper for my site */
 html {
 	background-image: url("images/blackwhite.jpg");
 	background-size: cover;
 	height:100%;
 	background-attachment: fixed;
 }
-
+/* This is stating that there is no margin by default on this site.
+Therefor my site gets maximum screen estate. */
 body {
 	margin: 0; 
 	font-family: Ubuntu;
 }
 
-.tiny-header a {
-	text-decoration: none;
-	color: lightgrey;
-}
-
+/* Any attributes I want for the whole nav bar are here */
 .tiny-header header {
 	background-color:  #333333;
 	padding-top: 10px;
@@ -24,33 +21,28 @@ body {
 	padding-left: 30px;
 	margin-bottom: 50px;
 }
-/*     Not in use
-.tiny-header h1 {
-	color: white;
-	margin: 0;
-	font-size: 24px;
-	text-transform: uppercase;
-	font-family: "Ubuntu"
-}
-*/
-
-.main-menu {
-	background: #333333;
-}
-
+/* Properties for the lnks in my nav bar*/
 .main-menu a {
 	background-color: #333333;
 	border-color: #00DD00;
 	font-weight: bold;
 	display: inline-block;
 	padding: 5px 7px;
+	text-decoration: none;
+	color: lightgrey;
 }
-
+/* This is what happens to the links as the mouse 
+hovers over them. I change colours to make it  feel
+like a button and naturally intuitive.*/
 .main-menu a:hover {
 	background-color: #696969;
 	color: #FFFFFF;
 }
 
+.main-menu {
+	background-color: #333333;
+}
+/* This defines what the main page content block will look like*/
 .page-content {
 	border-radius: 15px;
 	background-color: #959;
@@ -64,7 +56,7 @@ body {
 }
 
 /* GALLERY */
-
+/* This shows what the gallery page will look like*/
 .gallery {
 /*	background-color: #222222; */
     padding: 30px;
@@ -73,17 +65,18 @@ body {
     margin-top: 30px;
     text-align:center;
 }
-
+/* States the properties of all images in the gallery section*/
 .gallery img {
 	height: 100px;
 	border-width: 5px;
 	border-style: solid;
 	margin: 5px;
+	border-color: lightgrey;
 }
 
 
-/* Specialty */
-
+/* Specialty - 1 off sections */
+/* All objects with an anchor attribute will not have any underline*/
 a.nounderline {
 	text-decoration: none;
 	color: white;
@@ -93,7 +86,7 @@ a.nounderline {
 	height: 40px;
 	padding: 3px;
 }
-
+/* A table */
 table {
 	width: auto;
 }
@@ -107,6 +100,12 @@ td {
 	padding-top: 5px;
 }
 
+#video-content iframe {
+	border-width: 5px;
+	border-style: solid;
+	margin-top: 10px;
+	border-color: lightgrey;
+}
 
 img#displayphoto {
 	margin: 4px;
